@@ -7,6 +7,12 @@
       "GroupServiceWrapper": {
         "$path": "src/GroupServiceWrapper.luau"
       }
+    },
+
+    "ServerScriptService": {
+      "ExampleUsage": {
+        "$path": "src/Example.server.luau"
+      }
     }
   }
 }
