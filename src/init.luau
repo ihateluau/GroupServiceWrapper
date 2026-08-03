@@ -101,7 +101,8 @@ function GroupServiceWrapper:HasRole(UserId: number, GroupId: number, RoleId: nu
 		return false
 	end
 
-	for _, RoleInfo in result do
+	local roles = result :: Roles
+	for _, RoleInfo in roles do
 		if RoleInfo.Rank == RoleId then
 			return true
 		end
@@ -118,7 +119,8 @@ function GroupServiceWrapper:GetPlayerHighestRole(UserId: number, GroupId: numbe
 	end
 
 	local highest: RoleInfo? = nil
-	for _, RoleInfo in result do
+	local roles = result :: Roles
+	for _, RoleInfo in roles do
 		if highest == nil then
 			highest = RoleInfo
 		elseif RoleInfo.Rank > highest.Rank then
@@ -137,7 +139,8 @@ function GroupServiceWrapper:GetPlayerLowestRole(UserId: number, GroupId: number
 	end
 
 	local lowest: RoleInfo? = nil
-	for _, RoleInfo in result do
+	local roles = result :: Roles
+	for _, RoleInfo in roles do
 		if lowest == nil then
 			lowest = RoleInfo
 		elseif RoleInfo.Rank < lowest.Rank then
@@ -155,7 +158,8 @@ function GroupServiceWrapper:PlayerHasRoleGreaterThan(UserId: number, GroupId: n
 		return false
 	end
 
-	for _, RoleInfo in result do
+	local roles = result :: Roles
+	for _, RoleInfo in roles do
 		if RoleInfo.Rank >= Number then
 			return true
 		end
@@ -171,7 +175,8 @@ function GroupServiceWrapper:PlayerHasRoleLessThan(UserId: number, GroupId: numb
 		return false
 	end
 
-	for _, RoleInfo in result do
+	local roles = result :: Roles
+	for _, RoleInfo in roles do
 		if RoleInfo.Rank <= Number then
 			return true
 		end
