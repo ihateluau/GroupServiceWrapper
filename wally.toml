@@ -1,6 +1,7 @@
 [package]
 name = "ihateluau/groupservicewrapper"
-version = "0.1.0"
+version = "0.1.4"  
 license = "MIT"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+exclude = ["rokit.toml", "wally.lock", "sourcemap.json"]

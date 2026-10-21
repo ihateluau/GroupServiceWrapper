@@ -2,16 +2,9 @@
   "name": "groupservicewrapper",
   "tree": {
     "$className": "DataModel",
-
     "ReplicatedStorage": {
       "GroupServiceWrapper": {
-        "$path": "src/GroupServiceWrapper.luau"
-      }
-    },
-
-    "ServerScriptService": {
-      "ExampleUsage": {
-        "$path": "src/Example.server.luau"
+        "$path": "src"
       }
     }
   }

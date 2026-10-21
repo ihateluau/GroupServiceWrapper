@@ -124,6 +124,7 @@ function GroupServiceWrapper:GetPlayerHighestRole(UserId: number, GroupId: numbe
 		if highest == nil then
 			highest = RoleInfo
 		elseif RoleInfo.Rank > highest.Rank then
+			local _s
 			highest = RoleInfo
 		end
 	end
