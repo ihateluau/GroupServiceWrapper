@@ -145,6 +145,7 @@ function GroupServiceWrapper:GetPlayerLowestRole(UserId: number, GroupId: number
 		if lowest == nil then
 			lowest = RoleInfo
 		elseif RoleInfo.Rank < lowest.Rank then
+			local _s
 			lowest = RoleInfo
 		end
 	end

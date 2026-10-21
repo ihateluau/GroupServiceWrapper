@@ -1,11 +1,6 @@
 {
   "name": "groupservicewrapper",
   "tree": {
-    "$className": "DataModel",
-    "ReplicatedStorage": {
-      "GroupServiceWrapper": {
-        "$path": "src"
-      }
-    }
+    "$path": "src"
   }
 }
